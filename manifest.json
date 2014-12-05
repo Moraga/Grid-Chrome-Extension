@@ -1,7 +1,14 @@
 {
 	"name": "Grid",
 	"version": "0.1",
+	"description": "Grid generator",
+	"homepage_url": "http://moraga.com.br/grid",
 	"manifest_version": 2,
+	"icons": {
+		"16": "icon.png",
+		"48": "icon-48.png",
+		"128": "icon-128.png"
+	},
 	"browser_action": {
 		"default_icon": "icon.png"
 	},
@@ -12,6 +19,5 @@
 	"content_scripts": [{
 		"matches": ["http://*/*", "https://*/*", "file://*/*"],
 		"js": ["content.js"]
-	}],	
-	"permissions": ["activeTab"]
+	}]
 }
